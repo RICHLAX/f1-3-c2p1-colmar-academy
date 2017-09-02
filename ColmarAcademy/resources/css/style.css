@@ -1,0 +1,510 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: #4a4a4a;
+}
+
+h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: normal;
+}
+
+p {
+  line-height: normal;
+  margin-top: 1rem;
+}
+
+/* HEADER SECTION */
+
+.superContainer {
+  width: 100%;
+}
+
+.container {
+}
+
+#logoImage {
+  height: 3rem;
+  width: auto;
+}
+
+#colmarBrand {
+  font-weight: 800;
+  color: #444444;
+}
+
+#academyBrand {
+  font-weight: lighter;
+  color: #888888;
+}
+
+header {
+  display: inline-flex;
+  width: 100%;
+  background-color: white;
+}
+
+#headerContainer {
+  display: inline-flex;
+  justify-content: space-between;
+  width: inherit;
+  height: 4rem;
+}
+
+#brandContainer {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+#navigationContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline;
+  justify-content: flex-end;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #34b3a0;
+}
+
+#icons {
+  display: none;
+}
+
+@media only screen and (max-width: 750px)
+{
+  #navigationContainer {
+    visibility: hidden;
+  }
+  #icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .navIcon {
+    height: 3rem;
+    width: auto;
+  }
+  #logoImage {
+    height: 3rem;
+    width: auto;
+  }
+  #brandNameContainer {
+    display: none;
+  }
+}
+
+
+/* FIRST BANNER SECTION */
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  background-color: #d4d5d6;
+}
+
+#bannerImage {
+  width: 100%;
+  height: auto;
+}
+
+#imageContainer {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+#headlineContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 40%;
+  height: inherit;
+}
+
+.innerHeadline {
+  margin-top: 0.75rem;
+}
+
+#bannerButton {
+  background-color: #152b39;
+  text-align: center;
+  padding: 0.5rem;
+  transition-property: background-color;
+  transition-duration: 700ms;
+}
+
+#bannerButton:hover {
+  background-color: #34b3a0;
+}
+
+#startHere {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: white;
+}
+
+@media only screen and (max-width: 750px)
+{
+  #banner {
+    display: flex;
+    flex-direction: column;
+  }
+  #imageContainer {
+    width: 100%;
+    padding: 0;
+  }
+  #headlineContainer {
+    width: 100%;
+    padding: 0;
+  }
+  #bannerButton {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  #everyday {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  #lorem {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    margin-left: 1rem;
+  }
+  p {
+    margin-left: 1rem;
+  }
+}
+ /* SECOND BANNER SECTION */
+.banner2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+}
+
+.banContainer2a {
+}
+
+.banContainer2a {
+  padding: 1.5rem;
+}
+
+.banner2a {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: white;
+}
+
+.banner2aImage {
+  width: auto;
+  padding: 2rem 1.5rem;
+}
+
+#infoImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.headingContainer {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.learning {
+  background-color: inherit;
+}
+
+.banner2b {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.longCard {
+  background-color: white;
+}
+.articleContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 1rem;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  transition-property: background-color;
+  transition-duration: 700ms;
+}
+
+.articleContainer:hover {
+  background-color: #d4d5d6;
+}
+
+.articleImage {
+  width: 35%;
+  padding: 1rem;
+}
+
+.squareImage {
+  width: 100%;
+  height: auto;
+}
+
+.mobileImage {
+  display: none;
+}
+.articleText {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.link {
+  font-size: 1.25rem;
+  color: #34b3a0;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 750px)
+{
+  #practiceSectionA {
+    display: none;
+  }
+  #practiceSectionB {
+    width: 100%;
+  }
+  .squareImage {
+    display: none;
+  }
+  .longCard {
+    width: 100%;
+  }
+  .articleImage {
+    width: 100%;
+    height: auto;
+  }
+  .mobileImage {
+    display: flex;
+    width: 95%;
+  }
+  .articleContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* LEARNING SECTION */
+
+.learning {
+  background-color: #d4d5d6;
+}
+
+  padding: 0.75rem;
+}
+
+#cardHolder1 {
+  margin-top: 1rem;
+}
+
+#cardHolder2 {
+  margin-bottom: 1rem;
+}
+
+.cardholder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
+#mainCardHolder1 {
+  background-color: #d4d5d6;
+}
+
+#mainCardHolder2 {
+  background-color: #d4d5d6;
+}
+
+.card {
+  width: 30%;
+  background-color: white;
+  margin: 1rem;
+}
+
+.card:hover {
+  border: solid 1px #34b3a0;
+}
+
+.photo .cardimage {
+  width: 100%;
+  height: auto;
+}
+
+.cardtext {
+  transition-property: color;
+  transition-duration: 500ms;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardtext:hover {
+  color: #34b3a0;
+}
+
+.courses {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.learningText {
+  margin-top: none;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 750px)
+{
+  .cardholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .photo {
+    display: none;
+  }
+  .learningText {
+    display: none;
+  }
+  .courses {
+    display: none;
+  }
+}
+
+.thesis {
+  background-color: white;
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 750px)
+{
+  .informationHeadline {
+    display: none;
+  }
+  .informationParagraph {
+    display: none;
+  }
+  #thesisSectionB {
+    display: none;
+  }
+  .banner2a {
+    width: 100%;
+  }
+}
+/*FOOTER SECTION*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #152b39;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  color: white;
+}
+
+#copyright {
+  margin-top: 0;
+}
+
+ .footerNav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+.footerNav ul li {
+  display: inline;
+}
+
+.footerNav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.footerNav ul li a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 750px)
+{
+  .footerNav {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
